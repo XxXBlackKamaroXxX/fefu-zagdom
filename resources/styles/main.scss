@@ -11,6 +11,22 @@ $med: 500;
 $bold: 700;
 
 
+/* Functions */
+@function toRem($size) {
+   @return $size / 16px * 1rem;
+}
+
+
 /* Side Imports */
 @import "./uikit.scss";
 @import "../layouts/base.scss";
+
+
+/* Elements */
+@import "./elements.scss";
+
+
+/* Components */
+@import "../components/header/header.scss";
+@import "../components/site-nav/site-nav.scss";
+@import "../components/footer/footer.scss";
